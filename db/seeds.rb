@@ -22,8 +22,6 @@ end
 
 def movies
 
-    Movie.destroy_all
-
     response1 = RestClient.get "https://api.themoviedb.org/3/movie/popular?api_key=d5ba9815eee72ec8ecb7839af9af7ad6&language=en-US&page=1"
     json1 = JSON.parse response1
 
