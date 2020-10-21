@@ -3,7 +3,7 @@ class Movie < ApplicationRecord
         @connection = ActiveRecord::Base.connection
 
         results = @connection.exec_query(
-            "SELECT * FROM movies WHERE cast(movies.category as text) == '#{cat}'"
+            "SELECT * FROM movies WHERE movies.category = '#{cat}'"
         )
 
         return results
