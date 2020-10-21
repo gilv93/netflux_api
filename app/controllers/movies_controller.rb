@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
 
   # GET /movies/1
   def show
-    render json: @movie
+     render json: @movie
   end
 
   # POST /movies
@@ -41,7 +41,10 @@ class MoviesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_movie
-      @movie = Movie.find(params[:id])
+      cat = params[:category]
+      if (cat == 'top_rated' || cat == 'upcoming' || cat == 'popular')
+        @movie = Movie.find_by_cat(cat)
+      end
     end
 
     # Only allow a trusted parameter "white list" through.
