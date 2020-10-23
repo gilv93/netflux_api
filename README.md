@@ -1,6 +1,6 @@
 # NETFLUX_API
 
-## An API setup specifically to be used by my NETFLUX frontend.
+## An API setup specifically to be used by my NETFLUX frontend (https://github.com/gilv93/NETFLUX).
 
 Current relevant endpoints:
 * https://shielded-castle-53505.herokuapp.com/movies/ - pulls up full list of movies in DB
