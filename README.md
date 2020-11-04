@@ -1,24 +1,14 @@
-# README
+# NETFLUX_API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## An API setup specifically to be used by my NETFLUX frontend (https://github.com/gilv93/NETFLUX).
 
-Things you may want to cover:
+Current relevant endpoints:
+* https://shielded-castle-53505.herokuapp.com/movies/ - pulls up full list of movies in DB
+* https://shielded-castle-53505.herokuapp.com/movies/:category - pulls up list of movies that match specified category parameter
 
-* Ruby version
+## To-do:
 
-* System dependencies
+* Create endpoint to allow for search for specific movies based off of ID
+* Create nested endpoint that alters https://shielded-castle-53505.herokuapp.com/movies/:category to /movies/category/:category to allow separating from https://shielded-castle-53505.herokuapp.com/movies/:id
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Refactor project and include tests
