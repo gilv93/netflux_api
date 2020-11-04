@@ -8,7 +8,7 @@ Current relevant endpoints:
 
 ## To-do:
 
-* Create endpoint to allow for search for speciic movies based off of ID
+* Create endpoint to allow for search for specific movies based off of ID
 * Create nested endpoint that alters https://shielded-castle-53505.herokuapp.com/movies/:category to /movies/category/:category to allow separating from https://shielded-castle-53505.herokuapp.com/movies/:id
 
 * Refactor project and include tests
